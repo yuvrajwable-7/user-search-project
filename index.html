@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Blur Card UI</title>
-  <link rel="stylesheet" href="./style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <style>
+    .done{
+      text-decoration: line-through;
+      color: green;
+    }
+    #ulist{
+      cursor: pointer;
+    }
+
+  </style>
 </head>
 <body>
-
-  <div class="container">
-    <input
-      class="search"
-      type="text"
-      placeholder="Search..."
-    />
-
-    <!-- JS will insert cards here -->
-    <div class="cards"></div>
-  </div>
-
+  <h1>Todo List</h1>
+  <input type="text" placeholder="typing..." id="input">
+  <br>
+  <button type="button" id="butt">click me</button>
+  <br>
+  <ul id="ulist"></ul>
   <script src="script.js"></script>
+  
 </body>
 </html>
