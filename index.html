@@ -3,26 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo List</title>
+  <title>Document</title>
   <style>
-    .done{
-      text-decoration: line-through;
-      color: green;
-    }
-    #ulist{
+    .question{
       cursor: pointer;
     }
-
+    .answer{
+      display: none;
+    }
   </style>
 </head>
 <body>
-  <h1>Todo List</h1>
-  <input type="text" placeholder="typing..." id="input">
-  <br>
-  <button type="button" id="butt">click me</button>
-  <br>
-  <ul id="ulist"></ul>
-  <script src="script.js"></script>
+  <h2>FAQs</h2>
+
+<div id="faq">
+
+  <div class="item">
+    <h3 class="question">What is JavaScript?</h3>
+    <p class="answer">JavaScript is a programming language.</p>
+  </div>
+
+  <div class="item">
+    <h3 class="question">What is Event Bubbling?</h3>
+    <p class="answer">Event moves from child to parent.</p>
+  </div>
+
+  <div class="item">
+    <h3 class="question">What is Event Delegation?</h3>
+    <p class="answer">Parent handles child events.</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
   
 </body>
 </html>
